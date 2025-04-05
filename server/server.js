@@ -5,7 +5,7 @@ const cors = require('cors');
 const app = express();
 
 // Enable CORS to allow your frontend (running on port 3000) to access the server (on port 5000)
-app.use(cors());
+app.use(cors({origin : "numetry-project-weather.vercel.app"}));
 
 app.get('/weather', async (req, res) => {
   const city = req.query.city; // Get city from query parameter

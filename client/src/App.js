@@ -33,8 +33,7 @@ function App() {
     setError('');
 
     try {
-      const response = await axios.get(`http://localhost:5000/weather?city=${city}`);
-
+     const response = await axios.get(`https://project-weather-omej.onrender.com/weather?city=${city}`);
       // Log the API response for debugging
       console.log('API Response:', response.data);
 
